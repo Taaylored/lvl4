@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Array Cardio 💪</title>
+</head>
+<body>
+  <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
+  <script>
+
+
+// CREATED MY OWN LIST: PLANETS IN OUR SOLOAR SYSTEM THAT CONTAIN 'M' IN THEIR NAME  
+      //https://simple.wikipedia.org/wiki/List_of_planets
+     const category = document.querySelector('.mw-content-ltr');
+     const links = Array.from(category.querySelectorAll('a'));
+     const planet = links
+                 .map(link => link.textContent)
+                 .filter(planet => planet.includes('M'));
+
+console.log(planet)
+  </script>
+</body>
+</html>
